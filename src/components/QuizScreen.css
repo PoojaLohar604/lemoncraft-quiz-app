@@ -1,0 +1,142 @@
+/* QuizScreen.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #e3e4e8);
+    color: #333;
+  }
+  
+  .quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #7f8c8d;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: #ecf0f1;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 15px;
+  }
+  
+  label:hover {
+    background: #bdc3c7;
+    color: #2c3e50;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="radio"]:checked + span,
+  input[type="checkbox"]:checked + span {
+    background: #3498db;
+    color: #fff;
+    border-radius: 12px;
+    padding: 8px;
+  }
+  
+  button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  .feedback {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  .quiz-complete {
+    text-align: center;
+  }
+  
+  .quiz-complete h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+  }
+  
+  .quiz-complete p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #7f8c8d;
+  }
+  
+  .restart-button {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .restart-button:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+  }
+  
+  .restart-button:active {
+    transform: scale(0.95);
+  }
+  
